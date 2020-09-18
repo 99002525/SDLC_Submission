@@ -42,7 +42,7 @@ int main() {
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "factorial", test_factorial);
   CU_add_test(suite, "modulus", test_modulus);
-  CU_add_test(suite, "squareroot", test_Squareroot);
+  CU_add_test(suite, "squareroot", test_squareroot);
 
 
 
