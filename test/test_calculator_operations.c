@@ -10,9 +10,8 @@ void test_add(void);
 void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
-void test_square(void);
 void test_power(void);
-void test_prime(void);
+
 
 /* Start of the application test */
 int main() {
