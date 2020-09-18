@@ -66,7 +66,7 @@ int power(int operand1, int operand2);
 * @return 1 for prime and 0 for non prime
 * @note Returns -1 for negative values
 */
-int prime(int operand1);
+int factorial(int operand1);
 
 /**
 * Gives the greater of operand1 by operand2 and returns the result 
@@ -106,6 +106,27 @@ int modulus(int operand1, int operand2);
 * @return squareroot of number
 */
 int squareroot(int operand1);
+
+/**
+* Calculates the sine of integer number
+* @param[in] operand1 
+* @return sine of number
+*/
+double sinvalue(int operand1);
+
+/**
+* Calculates the cos of integer number
+* @param[in] operand1 
+* @return cos of number
+*/
+double cosvalue(int operand1);
+
+/**
+* Calculates the tan of integer number
+* @param[in] operand1 
+* @return tan of number
+*/
+double tanvalue(int operand1);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
