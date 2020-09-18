@@ -134,5 +134,5 @@ void test_modulus(void) {
   CU_ASSERT(5 == modulus(105,10));
   
   /* Dummy fail*/
-  CU_ASSERT(5 == greater(25,5));
+  CU_ASSERT(5 == modulus(25,5));
 }
