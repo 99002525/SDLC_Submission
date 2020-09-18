@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Sin\n14. Cos\n15. Tan\n16. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -162,7 +162,31 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 13:
+          case SIN:
+            printf("\n\t %d is a sin of is %d  \nEnter to continue", 
+            calculator_operand1, 
+            sinvalue(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case COS:
+            printf("\n\t %d is a cos of is %d  \nEnter to continue", 
+            calculator_operand1, 
+            cosvalue(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case TAN:
+            printf("\n\t %d is a tan of is %d  \nEnter to continue", 
+            calculator_operand1, 
+            tanvalue(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 16:
             exit(0);
             break;
         default:
