@@ -44,4 +44,11 @@ int multiply(int operand1, int operand2);
 */
 int divide(int operand1, int operand2);
 
+/**
+* gives the square of the number
+* @param[in] operand1 
+* @return integer value of the square operand1 
+*/
+int divide(int operand1, int operand2);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
