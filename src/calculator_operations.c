@@ -95,3 +95,8 @@ int modulus(int operand1, int operand2)
 {
     return operand1 % operand2;
 }
+
+int squareroot(int operand1)
+{
+    return sqrt(operand1);
+}
