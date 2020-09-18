@@ -18,7 +18,9 @@ void test_greater(void);
 void test_factorial(void);
 void test_modulus(void);
 void test_squareroot(void);
-
+void test_sinvalue(void);
+void test_cosvalue(void);
+void test_tanvalue(void);
 
 /* Start of the application test */
 int main() {
@@ -43,6 +45,9 @@ int main() {
   CU_add_test(suite, "factorial", test_factorial);
   CU_add_test(suite, "modulus", test_modulus);
   CU_add_test(suite, "squareroot", test_squareroot);
+  CU_add_test(suite, "sinvalue", test_sinvalue);
+  CU_add_test(suite, "cosvalue", test_cosvalue);
+  CU_add_test(suite, "tanvalue", test_tanvalue);
 
 
 
@@ -144,4 +149,25 @@ void test_squareroot(void) {
   
   /* Dummy fail*/
   CU_ASSERT(1 == squareroot(100));
+}
+
+void test_sinvalue(void) {
+  CU_ASSERT(0 == sinvalue(0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == sinvalue(12));
+}
+
+void test_cosvalue(void) {
+  CU_ASSERT(1 == cosvalue(0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == cosvalue(12));
+}
+
+void test_tanvalue(void) {
+  CU_ASSERT(1 == tanvalue(45));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == tanvalue(12));
 }
