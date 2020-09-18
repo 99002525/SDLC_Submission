@@ -11,6 +11,7 @@ void test_subtract(void);
 void test_multiply(void);
 void test_divide(void);
 void test_square(void);
+void test_square(void);
 
 /* Start of the application test */
 int main() {
@@ -28,6 +29,7 @@ int main() {
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "square", test_square);
+  CU_add_test(suite, "power", test_power);
 
 
 /* Note: Do not edit START*/
@@ -79,3 +81,9 @@ void test_square(void) {
   CU_ASSERT(1500 == square(25));
 }
 
+void test_power(void) {
+  CU_ASSERT(100 == power(10, 2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(3 == divide(2, 2));
+}
