@@ -16,6 +16,7 @@ void test_prime(void);
 void test_smaller(void);
 void test_greater(void);
 void test_factorial(void);
+void test_modulus(void);
 
 
 /* Start of the application test */
@@ -39,6 +40,7 @@ int main() {
   CU_add_test(suite, "smaller", test_smaller);
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "factorial", test_factorial);
+  CU_add_test(suite, "modulus", test_modulus);
 
 
 
@@ -126,4 +128,11 @@ void test_factorial(void) {
   
   /* Dummy fail*/
   CU_ASSERT(10 == factorial(97));
+}
+
+void test_modulus(void) {
+  CU_ASSERT(5 == modulus(105,10));
+  
+  /* Dummy fail*/
+  CU_ASSERT(5 == greater(25,5));
 }
