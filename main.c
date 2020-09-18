@@ -142,7 +142,7 @@ void calculator_menu(void)
             getchar();
             break;
           case FACTORIAL:
-            printf("\n\t %d is a factorial is %d  \nEnter to continue", 
+            printf("\n\t the factorial of %d is %d  \nEnter to continue", 
             calculator_operand1, 
             factorial(calculator_operand1));
             
@@ -150,12 +150,12 @@ void calculator_menu(void)
             getchar();
             break;
           case MODULUS:
-            printf("\n\t Modulus of %d / %d = %d\nEnter to continue", 
+            printf("\n\t Modulus of %d and %d is %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             modulus(calculator_operand1, calculator_operand2));
           case SQUAREROOT:
-            printf("\n\t %d is a squareroot is %d  \nEnter to continue", 
+            printf("\n\t square root of %d is %d  \nEnter to continue", 
             calculator_operand1, 
             squareroot(calculator_operand1));
             
@@ -163,7 +163,7 @@ void calculator_menu(void)
             getchar();
             break;
           case SIN:
-            printf("\n\t %d is a sin of is %d  \nEnter to continue", 
+            printf("\n\t sine of %d is %d  \nEnter to continue", 
             calculator_operand1, 
             sinvalue(calculator_operand1));
             
@@ -171,7 +171,7 @@ void calculator_menu(void)
             getchar();
             break;
           case COS:
-            printf("\n\t %d is a cos of is %d  \nEnter to continue", 
+            printf("\n\t cos of %d is  %d  \nEnter to continue", 
             calculator_operand1, 
             cosvalue(calculator_operand1));
             
@@ -179,7 +179,7 @@ void calculator_menu(void)
             getchar();
             break;
           case TAN:
-            printf("\n\t %d is a tan of is %d  \nEnter to continue", 
+            printf("\n\t tan of %d is %d  \nEnter to continue", 
             calculator_operand1, 
             tanvalue(calculator_operand1));
             
