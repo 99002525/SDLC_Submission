@@ -85,4 +85,13 @@ int greater(int operand1, int operand2);
 int smaller(int operand1, int operand2);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
+/**
+* Calculates the factorial of integer number
+* @param[in] num to check whether a prime number or not
+* @return 1 for prime and 0 for non prime
+* @note Returns -1 for negative values
+*/
+int prime(int operand1);
+
+
 
