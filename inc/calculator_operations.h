@@ -99,4 +99,13 @@ int prime(int operand1);
 * @return integer value of operand1 % operand2
 */
 int modulus(int operand1, int operand2);
+
+/**
+* Calculates the square root of integer number
+* @param[in] operand1 
+* @return squareroot of number
+*/
+int squareroot(int operand1);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
+
+
