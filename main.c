@@ -100,12 +100,12 @@ void calculator_menu(void)
          case SQUARE:
             printf("\n\t Square of %d is %d \nEnter to continue", 
             calculator_operand1, 
-            square(calculator_operand1);
+            square(calculator_operand1));
             
             __fpurge(stdin);
             getchar();
             break;
-        case 5:
+        case 6:
             exit(0);
             break;
         default:
