@@ -27,3 +27,13 @@ int square(int operand1)
 {
     return operand1*operand1;
 }
+
+int power(int operand1, operand2)
+{
+    if(operand2==0)
+        return 1;
+    else if(operand2==1)
+        return operand1;
+    else
+        return pow(operand1, operand2);
+}
