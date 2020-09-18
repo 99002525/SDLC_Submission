@@ -100,3 +100,18 @@ int squareroot(int operand1)
 {
     return sqrt(operand1);
 }
+
+double sinevalue(int operand1)
+{
+    return sin(operand1);
+}
+
+double cosvalue(int operand1)
+{
+    return cos(operand1);
+}
+
+double tanvalue(int operand1)
+{
+    return tan(operand1);
+}
