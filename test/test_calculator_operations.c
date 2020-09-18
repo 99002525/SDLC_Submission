@@ -15,6 +15,8 @@ void test_square(void);
 void test_prime(void);
 void test_smaller(void);
 void test_greater(void);
+void test_factorial(void);
+
 
 /* Start of the application test */
 int main() {
@@ -36,6 +38,7 @@ int main() {
   CU_add_test(suite, "prime", test_prime);
   CU_add_test(suite, "smaller", test_smaller);
   CU_add_test(suite, "greater", test_greater);
+  CU_add_test(suite, "factorial", test_factorial);
 
 
 
@@ -115,4 +118,12 @@ void test_greater(void) {
   
   /* Dummy fail*/
   CU_ASSERT(5 == greater(25,5));
+}
+
+void test_factorial(void) {
+  CU_ASSERT(6 == factorial(3));
+  CU_ASSERT(-1 == factorial(-12))
+  
+  /* Dummy fail*/
+  CU_ASSERT(10 == factorial(97));
 }
