@@ -123,7 +123,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 7:
+        case 8:
             exit(0);
             break;
         default:
