@@ -51,4 +51,11 @@ int divide(int operand1, int operand2);
 */
 int divide(int operand1, int operand2);
 
+/**
+* raises the power of operand1 by operand2 and returns the result 
+* @param[in] operand1 
+* @param[in] operand2 
+* @return integer value of the operand1 ^ operand2
+*/
+int power(int operand1, int operand2);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
