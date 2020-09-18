@@ -12,6 +12,7 @@ void test_multiply(void);
 void test_divide(void);
 void test_square(void);
 void test_square(void);
+void test_prime(void);
 
 /* Start of the application test */
 int main() {
@@ -30,6 +31,7 @@ int main() {
   CU_add_test(suite, "divide", test_divide);
   CU_add_test(suite, "square", test_square);
   CU_add_test(suite, "power", test_power);
+  CU_add_test(suite, "prime", test_prime);
 
 
 /* Note: Do not edit START*/
@@ -85,5 +87,13 @@ void test_power(void) {
   CU_ASSERT(100 == power(10, 2));
   
   /* Dummy fail*/
-  CU_ASSERT(3 == divide(2, 2));
+  CU_ASSERT(3 == power(2, 2));
+}
+
+void test_prime(void) {
+  CU_ASSERT(1 == prime(89));
+  CU_ASSERT(-1 == prime(-12))
+  
+  /* Dummy fail*/
+  CU_ASSERT(0 == power(97));
 }
