@@ -17,6 +17,7 @@ void test_smaller(void);
 void test_greater(void);
 void test_factorial(void);
 void test_modulus(void);
+void test_squareroot(void);
 
 
 /* Start of the application test */
@@ -41,6 +42,7 @@ int main() {
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "factorial", test_factorial);
   CU_add_test(suite, "modulus", test_modulus);
+  CU_add_test(suite, "squareroot", test_Squareroot);
 
 
 
@@ -135,4 +137,11 @@ void test_modulus(void) {
   
   /* Dummy fail*/
   CU_ASSERT(5 == modulus(25,5));
+}
+
+void test_squareroot(void) {
+  CU_ASSERT(3 == squareroot(9));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == squareroot(100));
 }
