@@ -90,3 +90,8 @@ int factorial(int number)
   /* Recursively calculate Factorial of the number */
   return number * factorial(number-1);
 }
+
+int modulus(int operand1, int operand2)
+{
+    return operand1 % operand2;
+}
