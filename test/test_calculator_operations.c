@@ -13,6 +13,8 @@ void test_divide(void);
 void test_power(void);
 void test_square(void);
 void test_prime(void);
+void test_smaller(void);
+void test_greater(void);
 
 /* Start of the application test */
 int main() {
@@ -32,6 +34,8 @@ int main() {
   CU_add_test(suite, "power", test_power);
   CU_add_test(suite, "square", test_square);
   CU_add_test(suite, "prime", test_prime);
+  CU_add_test(suite, "smaller", test_smaller);
+  CU_add_test(suite, "greater", test_greater);
 
 
 
@@ -99,4 +103,16 @@ void test_prime(void) {
   CU_ASSERT(0 == prime(97));
 }
 
+void test_smaller(void) {
+  CU_ASSERT(10 == smaller(10,20));
+  
+  /* Dummy fail*/
+  CU_ASSERT(25 == smaller(25,5));
+}
 
+void test_greater(void) {
+  CU_ASSERT(20 == greater(10,20));
+  
+  /* Dummy fail*/
+  CU_ASSERT(5 == greater(25,5));
+}
