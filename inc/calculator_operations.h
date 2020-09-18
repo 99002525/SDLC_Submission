@@ -67,4 +67,22 @@ int power(int operand1, int operand2);
 * @note Returns -1 for negative values
 */
 int prime(int operand1);
+
+/**
+* Gives the greater of operand1 by operand2 and returns the result 
+* @param[in] operand1 
+* @param[in] operand2 
+* @return integer value of greater operand of operand1 and operand2
+*/
+int greater(int operand1, int operand2);
+
+/**
+* Gives the smaller of operand1 by operand2 and returns the result 
+* @param[in] operand1 
+* @param[in] operand2 
+* @return integer value of smaller operand of operand1 and operand2
+*/
+int smaller(int operand1, int operand2);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
+
+
