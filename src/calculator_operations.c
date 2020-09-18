@@ -101,7 +101,7 @@ int squareroot(int operand1)
     return sqrt(operand1);
 }
 
-double sinevalue(int operand1)
+double sinvalue(int operand1)
 {
     return sin(operand1);
 }
