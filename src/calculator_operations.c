@@ -39,16 +39,16 @@ int power(int operand1, int operand2)
         return pow(operand1, operand2);
 }
 
-int prime(int num)
+int prime(int operand1)
 {
     /* return -1 if a negative number*/
     int i,count=0;
-    if (num<0)
+    if (operand1<0)
         return -1;
 
-    for(i=1;i<=num;i++)
+    for(i=1;i<=operand1;i++)
     {
-        if((num%i)==0)
+        if((operand1%i)==0)
         {
             count++;
         }
