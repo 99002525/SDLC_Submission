@@ -28,9 +28,7 @@ int main() {
   CU_add_test(suite, "subtract", test_subtract);
   CU_add_test(suite, "multiply", test_multiply);
   CU_add_test(suite, "divide", test_divide);
-  CU_add_test(suite, "square", test_square);
   CU_add_test(suite, "power", test_power);
-  CU_add_test(suite, "prime", test_prime);
 
 
 /* Note: Do not edit START*/
