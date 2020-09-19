@@ -50,7 +50,7 @@ int divide(int operand1, int operand2);
 * @param[in] operand1 
 * @return integer value of the square operand1 
 */
-int divide(int operand1, int operand2);
+int square(int operand1);
 
 /**
 * raises the power of operand1 by operand2 and returns the result 
