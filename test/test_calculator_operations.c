@@ -21,6 +21,8 @@ void test_squareroot(void);
 void test_sinvalue(void);
 void test_cosvalue(void);
 void test_tanvalue(void);
+void test_centitometer(void);
+void test_metertocenti(void);
 
 /* Start of the application test */
 int main() {
@@ -48,6 +50,8 @@ int main() {
   CU_add_test(suite, "sinvalue", test_sinvalue);
   CU_add_test(suite, "cosvalue", test_cosvalue);
   CU_add_test(suite, "tanvalue", test_tanvalue);
+  CU_add_test(suite, "centitometer", test_centitometer);
+  CU_add_test(suite, "metertocenti", test_metertocenti);
 
 
 
@@ -170,4 +174,19 @@ void test_tanvalue(void) {
   
   /* Dummy fail*/
   CU_ASSERT(1 == tanvalue(12));
+}
+
+void test_metertocenti(void) {
+  CU_ASSERT(120 == metertocenti(1.2));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == metertocenti(12));
+}
+
+
+void test_centitometer(void) {
+  CU_ASSERT(1.2 == centitometer(120));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == centitometer(12));
 }
