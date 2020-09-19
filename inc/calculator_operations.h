@@ -134,6 +134,13 @@ double tanvalue(int operand1);
 * @return operand1 in meters
 */
 float centitometer(float operand1);
+
+/**
+* Converts meters to centimeters
+* @param[in] operand1 
+* @return operand1 in centimeters
+*/
+float metertocenti(float operand1);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
