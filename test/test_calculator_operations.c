@@ -214,8 +214,15 @@ void test_metertokm(void) {
 }
 
 void test_centitoinch(void) {
-  CU_ASSERT(100 == metertokm(254));
+  CU_ASSERT(100 == centitoinch(254));
   
   /* Dummy fail*/
-  CU_ASSERT(1 == metertokm(12));
+  CU_ASSERT(1 == centitoinch(12));
+}
+
+void test_inchtocenti(void) {
+  CU_ASSERT(254 == inchtocenti(100));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == inchtocenti(12));
 }
