@@ -13,7 +13,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, SQUARE, POWER, PRIME, GREATER, SMALLER, FACTORIAL, MODULUS, SQUAREROOT, SIN, COS, TAN,  EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Sin\n14. Cos\n15. Tan\n16. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Square\n6. Power\n7. Prime\n8. Greater\n.9 Smaller\n10. Factorial\n11. Modulus\n12. SquareRoot\n13. Sin\n14. Cos\n15. Tan\n16. CMTOM\n17. MTOCM\n18. MTOKM\n19. KMTOM\n20. INCHTOCM\n21. CMTOINCH\n22. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -186,7 +186,55 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 16:
+          case MTOCM:
+            printf("\n\t %d in cm is %d  \nEnter to continue", 
+            calculator_operand1, 
+            metertocenti(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case CMTOM:
+            printf("\n\t %d in m is %d  \nEnter to continue", 
+            calculator_operand1, 
+            centitometer(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case MTOKM:
+            printf("\n\t %d in km is %d  \nEnter to continue", 
+            calculator_operand1, 
+            metertokm(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case KMTOM:
+            printf("\n\t %d in m is %d  \nEnter to continue", 
+            calculator_operand1, 
+            kmtometer(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case INCHTOCM:
+            printf("\n\t %d in cm is %d  \nEnter to continue", 
+            calculator_operand1, 
+            inchtocenti(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+          case CMTOINCH:
+            printf("\n\t %d in inch is %d  \nEnter to continue", 
+            calculator_operand1, 
+            centitoinch(calculator_operand1));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 22:
             exit(0);
             break;
         default:
