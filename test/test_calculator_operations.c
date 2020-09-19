@@ -25,6 +25,8 @@ void test_centitometer(void);
 void test_metertocenti(void);
 void test_metertokm(void);
 void test_kmtometer(void);
+void test_centitoinch(void);
+void test_inchtocenti(void);
 
 /* Start of the application test */
 int main() {
@@ -56,6 +58,8 @@ int main() {
   CU_add_test(suite, "metertocenti", test_metertocenti);
   CU_add_test(suite, "metertokm", test_metertokm);
   CU_add_test(suite, "kmtometer", test_kmtometer);
+  CU_add_test(suite, "inchtocenti", test_inchtocenti);
+  CU_add_test(suite, "centitoinch", test_centitoinch);
 
 
 
@@ -204,6 +208,13 @@ void test_kmtometer(void) {
 
 void test_metertokm(void) {
   CU_ASSERT(1 == metertokm(1000));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == metertokm(12));
+}
+
+void test_centitoinch(void) {
+  CU_ASSERT(100 == metertokm(254));
   
   /* Dummy fail*/
   CU_ASSERT(1 == metertokm(12));
