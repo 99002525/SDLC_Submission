@@ -115,3 +115,13 @@ double tanvalue(int operand1)
 {
     return tan(operand1);
 }
+
+float centitometer(float operand1)
+{
+    return operand1/100;
+}
+
+float metertocenti(float operand1)
+{
+    return operand1*100;
+}
