@@ -135,3 +135,13 @@ float kmtometer(float operand1)
 {
     return operand1*1000;
 }
+
+float inchtocenti(float operand1)
+{
+    return operand1*2.54;
+}
+
+float centitoinch(float operand1)
+{
+    return operand1/2.54;
+}
