@@ -23,6 +23,8 @@ void test_cosvalue(void);
 void test_tanvalue(void);
 void test_centitometer(void);
 void test_metertocenti(void);
+void test_metertokm(void);
+void test_kmtometer(void);
 
 /* Start of the application test */
 int main() {
@@ -52,6 +54,8 @@ int main() {
   CU_add_test(suite, "tanvalue", test_tanvalue);
   CU_add_test(suite, "centitometer", test_centitometer);
   CU_add_test(suite, "metertocenti", test_metertocenti);
+  CU_add_test(suite, "metertokm", test_metertokm);
+  CU_add_test(suite, "kmtometer", test_kmtometer);
 
 
 
@@ -189,4 +193,18 @@ void test_centitometer(void) {
   
   /* Dummy fail*/
   CU_ASSERT(1 == centitometer(12));
+}
+
+void test_kmtometer(void) {
+  CU_ASSERT(1000 == kmtometer(1));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == kmtometer(12));
+}
+
+void test_metertokm(void) {
+  CU_ASSERT(1 == metertokm(1000));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == metertokm(12));
 }
