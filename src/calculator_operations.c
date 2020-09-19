@@ -125,3 +125,13 @@ float metertocenti(float operand1)
 {
     return operand1*100;
 }
+
+float metertokm(float operand1)
+{
+    return operand1/1000;
+}
+
+float kmtometer(float operand1)
+{
+    return operand1*1000;
+}
