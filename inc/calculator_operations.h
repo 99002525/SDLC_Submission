@@ -103,30 +103,37 @@ int modulus(int operand1, int operand2);
 /**
 * Calculates the square root of integer number
 * @param[in] operand1 
-* @return squareroot of number
+* @return squareroot of operand1
 */
 int squareroot(int operand1);
 
 /**
 * Calculates the sine of integer number
 * @param[in] operand1 
-* @return sine of number
+* @return sine of operand1
 */
 double sinvalue(int operand1);
 
 /**
 * Calculates the cos of integer number
 * @param[in] operand1 
-* @return cos of number
+* @return cos of operand1
 */
 double cosvalue(int operand1);
 
 /**
 * Calculates the tan of integer number
 * @param[in] operand1 
-* @return tan of number
+* @return tan of operand1
 */
 double tanvalue(int operand1);
+
+/**
+* Converts centimeters to meters
+* @param[in] operand1 
+* @return operand1 in meters
+*/
+float centitometer(float operand1);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
