@@ -177,7 +177,7 @@ void test_tanvalue(void) {
 }
 
 void test_metertocenti(void) {
-  CU_ASSERT(120 == metertocenti(1.2));
+  CU_ASSERT(1200 == metertocenti(12));
   
   /* Dummy fail*/
   CU_ASSERT(1 == metertocenti(12));
@@ -185,7 +185,7 @@ void test_metertocenti(void) {
 
 
 void test_centitometer(void) {
-  CU_ASSERT(1.2 == centitometer(120));
+  CU_ASSERT(12 == centitometer(1200));
   
   /* Dummy fail*/
   CU_ASSERT(1 == centitometer(12));
