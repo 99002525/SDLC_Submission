@@ -141,6 +141,21 @@ float centitometer(float operand1);
 * @return operand1 in centimeters
 */
 float metertocenti(float operand1);
+
+/**
+* Converts meters to kilometers
+* @param[in] operand1 
+* @return operand1 in kilometers
+*/
+float metertokm(float operand1);
+
+/**
+* Converts kilometers to meters
+* @param[in] operand1 
+* @return operand1 in meters
+*/
+float kmtometer(float operand1);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
 
 
